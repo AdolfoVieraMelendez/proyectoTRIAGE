@@ -1,0 +1,261 @@
+:root{
+    --colorPrimario: #ffffff;
+    --colorSecundario: #6a89cc;
+    --colorTerciario: #0984e3;
+    --Reanimacion: #e74c3c;
+    --Emergencia: #e67e22;
+    --Urgencia: #fed330;
+    --Prioritario: #1dd1a1;
+    --noUrgente: #3498db;
+}
+
+*{
+    font-family: Poppins, sans-serif;
+}
+
+.sa{
+    color: #fff;
+}
+
+.s{
+    background: #fff;
+}
+
+.tri{
+    color: #0984e3;
+    font-weight: bolder;
+    font-family: Poppins, sans-serif;
+}
+
+div.contenedor{
+    font-family: sans-serif; 
+    text-align: center;
+    background: var(--colorPrimario);
+}
+
+div.cajaLvls{
+    width           : 100%;
+    border          : solid 4px;
+    text-align      : center;
+    box-shadow      : 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    margin          : 5px;
+    min-height      : 133px; 
+    border-radius: 30px;
+}
+
+div.rojo{
+    background-color: var(--Reanimacion);
+}
+
+div.naranja{
+    background-color: var(--Emergencia);
+}
+
+div.amarillo{
+    background-color: var(--Urgencia);
+}
+
+div.verde{
+    background-color: var(--Prioritario);
+}
+
+div.azul{
+    background-color: var(--noUrgente);
+}
+
+.btn-form{
+    border-radius     : 0;
+    background        : var(--colorSecundario);
+    color             : #fff;
+    -webkit-transition: all 0.6s;
+    transition        : all 0.6s;
+    margin            : 10px 0px 10px 0px;
+}
+
+.btn-form:hover{
+    background: var(--colorTerciario);
+    border    :1px solid var(--colorSecundario);
+    color     :#fff;
+}
+
+.btn-form:hover:focus{
+    background: var(--colorSecundario);
+    border    :1px solid var(--colorSecundario);
+    color     :#fff;
+}
+
+.btn-form:focus{
+    background: var(--colorPrimario);
+    border    :1px solid var(--colorTerciario);
+    color     :#fff;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px var(--colorSecundario);
+}
+
+
+
+div.cajaLvls i{
+    font-size          : 60px;
+    color              : white;
+    font-weight        : bold;
+    margin-top         : 20px;
+}
+
+div.cajaLvls p{
+    font-size  : 20px;
+    color      : white;
+    font-weight: bold;
+    margin-top : 14px;
+}
+
+div.cajaLvls p.info{
+    text-align: left;
+    margin-left: 10px;
+}
+
+div.cajaLvls img.maleny{
+    width: 143.5px;
+    height: 186px;
+}
+
+div.cajaLvls img.adolfo{
+    width: 114.75px;
+    height: 204px;
+}
+
+div.pad{
+    padding: 9px 0 9px 0;
+}
+
+div.prueba{
+    padding: 67px 0 67px 0;
+}
+
+.anim1{
+    animation-delay: 1s;
+}
+
+.anim2{
+    animation-delay: 1.25s;
+}
+
+.anim3{
+    animation-delay: 1.5s;
+}
+
+.anim4{
+    animation-delay: 1.75s;
+}
+
+.anim5{
+    animation-delay: 2s;
+}
+
+.imgContainer{
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+.item-navegacion a{
+    text-decoration: none;
+}
+
+/* ------ INICIO FOOTER ------ */
+footer{
+    background: var(--colorTerciario);
+    font-family: Poppins, sans-serif; 
+    font-weight: normal; 
+    color: white;
+    
+}
+
+footer a{
+    color: white;
+    
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+
+li a i{
+    font-weight: normal;
+}
+
+.tituloLista{
+    font-weight: lighter;
+}
+
+.copyright{
+    text-align: right;
+}
+/* ------ FIN FOOTER ------ */
+
+/* ------ INICIO FORMULARIO ------ */
+
+div.formulario{
+    min-height: 80px;
+    margin    : 5px 0px 100px 0px;
+    color     : 000;
+    background: #dfe4ea;
+}
+
+div.formulario > form > div.encabezado{
+    margin    : 0px,0px,7px;
+    padding   : 7px 0px 7px 7px;
+    border    : 1px solid var(--colorPrimario);
+    background: #00a8ff;
+    color     : #fff;
+    font-size : 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+div.formulario > form > div.cuerpo{
+    border-left : 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding     : 12px;
+}
+
+div.formulario > form > div.pie{
+    border    : 1px solid #ccc;
+    margin    : 0px,0px,0px,10px;
+    padding   : 0px 10px 0px 12px;
+    text-align: right;
+}
+
+div.formulario label {
+    font-weight: normal;
+}
+
+div.formulario input{
+    color: #000;
+}
+
+
+
+/* ------ FIN FORMULARIO ------ */
+
+iframe{
+    width : 560px;
+    height: 315px;
+}
+
+@media (max-width: 652px){
+    iframe{
+        width : 280px;
+        height: 157.5px;
+    }
+}
+
+@media (max-width: 326px){
+    iframe{
+        width : 150px;
+        height: 120px;
+    }
+}
